@@ -1,20 +1,24 @@
 package pl.math.uni.lodz.javaproject;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Factory implements IFactoryObject {
     IFactoryObject source;
-
+    private List<Person> list = new ArrayList<>();
     @Override
     public List<Person> getPersonByName(String name) {
-        source.getPersonByName(name);
-        return null;
+        list = this.source.getPersonByName(name);
+        return list;
     }
 
     @Override
     public void setSource(String name) {
         if (name == "XML") {
-            source = new XMLFactoryObject();
+            this.source = new XMLFactoryObject();
+        }
+        if (name == "DB") {
+            this.source = new DBFactoryObject();
         }
     }
 }
