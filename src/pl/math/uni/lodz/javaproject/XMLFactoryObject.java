@@ -10,6 +10,7 @@ public class XMLFactoryObject implements IFactoryObject {
         list = new ArrayList<>();
         list.add(new Person("Jan","Kowalski"));
         list.add(new Person("Adam","Nowak"));
+        list.add(new Person("Marcin","Gortat"));
     }
 
     @Override
