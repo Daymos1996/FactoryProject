@@ -36,10 +36,6 @@ public class FactoryProject {
         factories.put("CSV",list);
 
 
-        System.out.println(factories.size());
-        System.out.println(factories.remove("DB", list));
-        System.out.println(factories.size());
-
 
     }
 
