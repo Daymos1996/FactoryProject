@@ -25,8 +25,20 @@ public class FactoryProject {
         list.addAll(factory.getPersonByName("DB"));
         factories.put("DB",list);
 
-        System.out.println(factories.get("DB").get(2).getFirstName());
-        
+        System.out.println(factories.get("DB").get(3).getFirstName());
+
+        factory.setSource("TXT");
+        list.addAll(factory.getPersonByName("TXT"));
+        factories.put("TXT",list);
+
+        factory.setSource("CSV");
+        list.addAll(factory.getPersonByName("CSV"));
+        factories.put("CSV",list);
+
+
+        System.out.println(factories.size());
+        System.out.println(factories.remove("DB", list));
+        System.out.println(factories.size());
 
 
     }

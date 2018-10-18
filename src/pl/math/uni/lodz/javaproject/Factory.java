@@ -22,5 +22,11 @@ public class Factory implements IFactoryObject {
         if (name == "DB") {
             this.source = new DBFactoryObject();
         }
+        if (name == "TXT") {
+            this.source = new TXTFactoryObject();
+        }
+        if (name == "CSV") {
+            this.source = new CSVFactoryObject();
+        }
     }
 }
