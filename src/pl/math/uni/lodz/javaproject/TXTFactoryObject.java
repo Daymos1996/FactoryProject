@@ -10,6 +10,8 @@ public class TXTFactoryObject implements IFactoryObject {
         list = new ArrayList<>();
         list.add(new Person("Radek","Lot"));
         list.add(new Person("Franek","Kowaliski"));
+        //test gita
+
     }
 
     @Override
