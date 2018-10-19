@@ -10,6 +10,7 @@ public class FactoryProject {
     private static Map<String, List<Person>> factories;
     public static void main(String[] args) {
 
+
         factories = new HashMap<>();
         list = new ArrayList<>();
 
@@ -34,8 +35,6 @@ public class FactoryProject {
         factory.setSource("CSV");
         list.addAll(factory.getPersonByName("CSV"));
         factories.put("CSV",list);
-
-
 
     }
 
