@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Logger;
 
 public class FactoryProject {
     private static List<Person> list;
@@ -13,7 +14,7 @@ public class FactoryProject {
 
         factories = new HashMap<String, List<Person>>();
         list = new ArrayList<Person>();
-
+        Logger logger = (Logger) Logger.getLogger(String.valueOf(FactoryProject.class));
         Factory factory = new Factory();
         factory.setSource("XML");
 
