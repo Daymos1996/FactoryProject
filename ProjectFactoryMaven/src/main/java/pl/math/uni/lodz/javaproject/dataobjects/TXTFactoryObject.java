@@ -1,4 +1,7 @@
-package pl.math.uni.lodz.javaproject;
+package pl.math.uni.lodz.javaproject.dataobjects;
+
+import pl.math.uni.lodz.javaproject.IFactoryObject;
+import pl.math.uni.lodz.javaproject.Person;
 
 import java.util.ArrayList;
 import java.util.List;

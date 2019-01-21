@@ -1,5 +1,10 @@
 package pl.math.uni.lodz.javaproject;
 
+import pl.math.uni.lodz.javaproject.dataobjects.CSVFactoryObject;
+import pl.math.uni.lodz.javaproject.dataobjects.DBFactoryObject;
+import pl.math.uni.lodz.javaproject.dataobjects.TXTFactoryObject;
+import pl.math.uni.lodz.javaproject.dataobjects.XMLFactoryObject;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,16 +21,16 @@ public class Factory implements IFactoryObject {
 
     @Override
     public void setSource(String name) {
-        if (name == "XML") {
+        if (name.equalsIgnoreCase("XML")) {
             this.source = new XMLFactoryObject();
         }
-        if (name == "DB") {
+        if (name.equalsIgnoreCase("DB")) {
             this.source = new DBFactoryObject();
         }
-        if (name == "TXT") {
+        if (name.equalsIgnoreCase("TXT")) {
             this.source = new TXTFactoryObject();
         }
-        if (name == "CSV") {
+        if (name.equalsIgnoreCase("CSV")) {
             this.source = new CSVFactoryObject();
         }
     }
